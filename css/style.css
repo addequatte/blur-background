@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    background: #6e5856;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+.parent{
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0 0 12px 6px #0005;
+}
+.blur-background{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    filter: blur(20px);
+    width: 840px;
+    z-index: -1;
+}
+.child{
+    width: 200px;
+    padding: 10px;
+    margin:25px;
+    border-radius: 150px;
+    cursor: pointer;
+    background:#fff3;
+    box-shadow: 0 0 12px 6px #0005;
+}
